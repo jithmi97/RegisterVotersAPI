@@ -3,12 +3,12 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "voters_table",catalog = "voters_db")
+@Table(name = "voters_table",catalog = "register_voter_db")
 public class VotersModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long Voters_NIC;
+    private long VotersNIC;
     private String VotersName;
     private Date DateOfBirth;
     private String Address;
@@ -19,9 +19,9 @@ public class VotersModel {
         super();
     }
 
-    public VotersModel(long Voters_NIC, String VotersName, Date DateOfBirth, String Address,
+    public VotersModel(long VotersNIC, String VotersName, Date DateOfBirth, String Address,
                        String City,String State, Date RegisterDate) {
-        this.Voters_NIC = Voters_NIC;
+        this.VotersNIC = VotersNIC;
         this.VotersName = VotersName;
         this.DateOfBirth = DateOfBirth;
         this.Address = Address;
@@ -31,11 +31,11 @@ public class VotersModel {
     }
 
     public long getVoters_NIC() {
-        return Voters_NIC;
+        return VotersNIC;
     }
 
     public void setVoters_NIC(long Voters_NIC) {
-        this.Voters_NIC = Voters_NIC;
+        this.VotersNIC = VotersNIC;
     }
 
     public String getVotersName() {

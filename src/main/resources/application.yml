@@ -5,7 +5,7 @@ spring:
   datasource:
     username: root
     password: root1234
-    url: jdbc:mysql://register.c1uxlbjnxph9.us-east-2.rds.amazonaws.com:3306/registerVoter_db
+    url: jdbc:mysql://voter-register.c1uxlbjnxph9.us-east-2.rds.amazonaws.com:3306/register_voter_db
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
